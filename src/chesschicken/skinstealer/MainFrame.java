@@ -100,7 +100,7 @@ public class MainFrame extends JDialog
 						FrameError.callerror(e1.toString());
 					}
 					
-					String nickurl = "https://rubeta.xyz/web/MineCraft/MinecraftSkins/" + textField.getText().trim() + ".png";
+					String nickurl = "http://assets.rubeta.net/skins/" + textField.getText().trim() + ".png";
 					try (BufferedInputStream in = new BufferedInputStream(new URL(nickurl).openStream());
 							  FileOutputStream fileOutputStream = new FileOutputStream(newfile + ".png"))
 					{
