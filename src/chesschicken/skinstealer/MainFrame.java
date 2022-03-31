@@ -56,14 +56,14 @@ public class MainFrame extends JDialog
 	public MainFrame()
 	{
 		setIconImage(Toolkit.getDefaultToolkit().getImage(MainFrame.class.getResource("/chesschicken/skinstealer/Icon.png")));
-		setTitle("RuBeta Skin Stealer 0.2 by ChessChicken");
+		setTitle("RuBeta Cape Stealer 0.1 by GameHerobrine");
 		setBounds(100, 100, 514, 268);
 		getContentPane().setLayout(new BorderLayout());
 		contentPanel.setBorder(new EmptyBorder(5, 5, 5, 5));
 		getContentPane().add(contentPanel, BorderLayout.CENTER);
 		contentPanel.setLayout(null);
 		
-		JLabel lblNewLabel = new JLabel("Skin Stealer - \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0430, \u043A\u043E\u0442\u043E\u0440\u0430\u044F \u043F\u043E\u043C\u043E\u0433\u0430\u0435\u0442 \u0432\u0430\u043C \u0443\u043A\u0440\u0430\u0441\u0442\u044C \u0447\u0435\u0439-\u0442\u043E \u0441\u043A\u0438\u043D.");
+		JLabel lblNewLabel = new JLabel("CapeStealer is a program to help you to steal cape ^-^");
 		lblNewLabel.setBounds(10, 11, 454, 14);
 		contentPanel.add(lblNewLabel);
 		
@@ -72,11 +72,11 @@ public class MainFrame extends JDialog
 		contentPanel.add(textField);
 		textField.setColumns(10);
 		
-		JLabel lblNewLabel_1 = new JLabel("\u041D\u0418\u041A");
-		lblNewLabel_1.setBounds(368, 105, 33, 14);
+		JLabel lblNewLabel_1 = new JLabel("Nickname");
+		lblNewLabel_1.setBounds(368, 105, 60, 14);
 		contentPanel.add(lblNewLabel_1);
 		
-		JButton btnNewButton = new JButton("\u0417\u0430\u0433\u0440\u0443\u0437\u0438\u0442\u044C!");
+		JButton btnNewButton = new JButton("Steal =)");
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e)
 			{
@@ -100,7 +100,7 @@ public class MainFrame extends JDialog
 						FrameError.callerror(e1.toString());
 					}
 					
-					String nickurl = "http://assets.rubeta.net/skins/" + textField.getText().trim() + ".png";
+					String nickurl = "http://assets.rubeta.net/cloaks/" + textField.getText().trim() + ".png";
 					try (BufferedInputStream in = new BufferedInputStream(new URL(nickurl).openStream());
 							  FileOutputStream fileOutputStream = new FileOutputStream(newfile + ".png"))
 					{
@@ -124,7 +124,7 @@ public class MainFrame extends JDialog
 				        	FrameError.callerror(ex.toString());
 				        }
 				       
-				       scaledImage = image.getScaledInstance(384, 192, Image.SCALE_DEFAULT);   
+				       scaledImage = image.getScaledInstance(22*6, 17*6, Image.SCALE_DEFAULT);   
 				       
 				       
 				       Loadwerf();
@@ -135,7 +135,7 @@ public class MainFrame extends JDialog
 		btnNewButton.setBounds(368, 161, 120, 23);
 		contentPanel.add(btnNewButton);
 		
-		JButton btnNewButton_1 = new JButton("\u0412\u044B\u0445\u043E\u0434");
+		JButton btnNewButton_1 = new JButton("Exit =(");
 		btnNewButton_1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e)
 			{
@@ -146,7 +146,7 @@ public class MainFrame extends JDialog
 		btnNewButton_1.setBounds(368, 195, 120, 23);
 		contentPanel.add(btnNewButton_1);
 		
-		JLabel lblNewLabel_2 = new JLabel("\u041F\u0440\u0438 \u0437\u0430\u0433\u0440\u0443\u0437\u043A\u0435 \u0441\u043A\u0438\u043D\u0430, \u043E\u043D \u0441\u043E\u0445\u0440\u0430\u043D\u044F\u0435\u0442\u0441\u044F \u0432\u043E\u0437\u043B\u0435 \u043F\u0440\u043E\u0433\u0438 \u0441 \u0438\u043C\u0435\u043D\u0435\u043C (\u041D\u0418\u041A + png)");
+		JLabel lblNewLabel_2 = new JLabel("Stolen cape location: <CAPESTEALER>/<NICKNAME>.png");
 		lblNewLabel_2.setBounds(10, 39, 478, 14);
 		contentPanel.add(lblNewLabel_2);
 	}

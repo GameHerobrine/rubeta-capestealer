@@ -1,5 +1,6 @@
-# rubeta-skinstealer
+# rubeta-capestealer
 
-Old small project, that let you download 64x32 skin from https://rubeta.net
+Old small project, that let you download 22x17 cape from https://rubeta.net
 
-You can freedomly take, change, fork this code!
+> You can freedomly take, change, fork this code!
+ - Thanks =D
